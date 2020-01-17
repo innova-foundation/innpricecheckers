@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://api.coinmarketcap.com/v1/ticker/denarius-dnr/";
+$url = "https://api.coinmarketcap.com/v1/ticker/innova/";
 
 /* gets the data from a URL */
 function get_data($url) {
@@ -20,12 +20,12 @@ $dataparsed = json_decode($json, TRUE);
 $lastprice = $dataparsed[0]["price_usd"];
 $lastbtcprice = $dataparsed[0]["price_btc"];
 
-$dnrusd = $lastprice;
-$dnrbtc = $lastbtcprice;
+$innusd = $lastprice;
+$innbtc = $lastbtcprice;
 
 ?>
 
 <ul>
-<li>DNR/USD: $ <?php print($dnrusd) ?></li>
-<li>DNR/BTC: <?php print($dnrbtc) ?> BTC</li>
+<li>INN/USD: $ <?php print($innusd) ?></li>
+<li>INN/BTC: <?php print($innbtc) ?> BTC</li>
 </ul>
