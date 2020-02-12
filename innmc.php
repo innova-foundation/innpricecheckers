@@ -5,7 +5,7 @@ $url = "https://api.coingecko.com/api/v3/simple/price?ids=innova&vs_currencies=u
 $json = file_get_contents($url);
 $dataparsed = json_decode($json, TRUE);
 
-$mc = $dataparsed[0]["usd_market_cap"];
+$mc = $dataparsed["innova"]["usd_market_cap"];
 
 $innmc = $mc;
 

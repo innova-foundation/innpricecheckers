@@ -5,7 +5,7 @@ $url = "https://api.coingecko.com/api/v3/simple/price?ids=innova&vs_currencies=e
 $json = file_get_contents($url);
 $dataparsed = json_decode($json, TRUE);
 
-$lastprice = $dataparsed[0]["eur"];
+$lastprice = $dataparsed["innova"]["eur"];
 
 $inneur = $lastprice;
 
