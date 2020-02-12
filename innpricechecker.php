@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://api.coinmarketcap.com/v1/ticker/innova/";
+$url = "https://api.coingecko.com/api/v3/simple/price?ids=innova&vs_currencies=usd%2Ceur%2Cbtc&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true";
 
 /* gets the data from a URL */
 function get_data($url) {
