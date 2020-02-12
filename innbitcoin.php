@@ -5,7 +5,7 @@ $url = "https://api.coingecko.com/api/v3/simple/price?ids=innova&vs_currencies=b
 $json = file_get_contents($url);
 $dataparsed = json_decode($json, TRUE);
 
-$lastbtcprice = $dataparsed[0]["price_btc"];
+$lastbtcprice = $dataparsed[0]["btc"];
 
 $innbtc = $lastbtcprice;
 

@@ -17,8 +17,8 @@ function get_data($url) {
 $json = file_get_contents($url);
 $dataparsed = json_decode($json, TRUE);
 
-$lastprice = $dataparsed[0]["price_usd"];
-$lastbtcprice = $dataparsed[0]["price_btc"];
+$lastprice = $dataparsed[0]["usd"];
+$lastbtcprice = $dataparsed[0]["btc"];
 
 $innusd = $lastprice;
 $innbtc = $lastbtcprice;
